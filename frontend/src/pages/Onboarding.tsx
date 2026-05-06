@@ -67,7 +67,7 @@ export default function Onboarding() {
   });
 
   const [isGenerating, setIsGenerating] = useState(false);
-  const [error, setError] = useState("");
+  const [, setError] = useState("");
   const navigate = useNavigate()
   function updateForm(field: string, value: string) {
     setFormData((prev) => ({ ...prev, [field]: value }));
