@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import { profileRouter } from "./routes/profile";
-import { planRouter } from "./routes/plan";
+import { profileRouter } from "./routes/profile.js"; //adding js extension for NodeNext module resolution
+import { planRouter } from "./routes/plan.js"; //adding js extension for NodeNext module resolution
 dotenv.config();
 
 const app = express();
